@@ -1,0 +1,83 @@
+:root {
+  --primaryColor: #a48451;
+  --secondaryColor: #7d7d7e;
+  --thirdColor: #1d2222;
+
+  --primaryBackgroundColor: #2b2b2a;
+  --secondaryBackgroundColor: #404040;
+
+  --primaryFontColor: #f1f5f9;
+  --secondaryFontColor: #94a3b8;
+
+  --defaultWhite: #fff;
+  --defaultDark: #0d0d0d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.explore-section{
+  width: 100dvw;
+  min-height: 100dvh;
+  background-color: var(--primaryBackgroundColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title-explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
+
+    h1{
+      font-size: 3em;
+      color: var(--primaryFontColor);
+    }
+  }
+  .content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .cars-explore{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 1em;
+    }
+  }
+  .btn-container-explore{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    position: relative;
+
+    hr{
+      width: 100%;
+      height: 3px;
+      background-color: var(--secondaryColor);
+      position: absolute;
+    }
+    .btn-explore{
+      z-index: 1;
+      width: 20%;
+      min-width: 300px;
+      height: 50px;
+      background-color: var(--primaryBackgroundColor);
+      border: 4px solid var(--primaryColor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--primaryFontColor);
+    }
+  }
+}
