@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primaryColor: #a48451;
+  --secondaryColor: #7d7d7e;
+  --thirdColor: #1d2222;
+
+  --primaryBackgroundColor: #2b2b2a;
+  --secondaryBackgroundColor: #404040;
+
+  --primaryFontColor: #f1f5f9;
+  --secondaryFontColor: #94a3b8;
+
+  --defaultWhite: #fff;
+  --defaultDark: #0d0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+body{
+  box-sizing: border-box;
+}
+.img-background-container{
+  width: 100dvw;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.cars-container{
+  min-width: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  div{
+    width: 50dvw;
+  }
+  .cars-title{
+    text-align: start;
+    h1{
+      font-size: 3em;
+      color: var(--primaryColor);
+      font-weight: 700;
+    }
+  }
+  .cars-filters{
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+    margin-top: 2em;
+    font-size: 1.5em;
+    color: var(--secondaryFontColor);
+    .filters{
+      position: relative;
+      font-weight: 700;
+    }
+    .filters::before{
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      background-color: var(--defaultDark);
+      width: 100%;
+      height: 2.5px;
+      transform: scaleX(0);
+      /* transform-origin: left; */
+      transition: .3s;
+
+    }
+    .filters:hover:before{
+      transform: scaleX(1);
+    }
+  }
+  .cars-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+  }
+}

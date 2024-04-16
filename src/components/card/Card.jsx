@@ -2,7 +2,7 @@ import "./Card.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
-export default function Card({img, text1, text2}){
+export default function Card({img, text1, text2, icon=false}){
   return(
     <>
       <div className="card-container">
@@ -15,7 +15,11 @@ export default function Card({img, text1, text2}){
           </div>
           <div className="subtext-card">
             <p>{text2}</p>
-            <FontAwesomeIcon icon={faChevronRight}/>
+            {
+              icon ?
+              <FontAwesomeIcon icon={faChevronRight}/>
+              : ""
+            }
           </div>
         </div>
       </div>

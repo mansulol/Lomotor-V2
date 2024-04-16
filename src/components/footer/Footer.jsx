@@ -9,13 +9,13 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer({ rutaLogo }) {
+export default function Footer() {
   return (
     <>
       <footer className="footer">
         <div className="social-media-container">
           <div className="logo-footer-container">
-            <img src={rutaLogo} alt="img logo LoMotor footer" />
+            <img src="/src/assets/svg/Logo_Lomotor_v2_logo_black.svg" alt="img logo LoMotor footer" />
           </div>
           <div className="social-media-icons-container">
             <FontAwesomeIcon className="social-media-icon" icon={faFacebook} />
@@ -69,7 +69,7 @@ export default function Footer({ rutaLogo }) {
           </div>
         </div>
         <div className="logo">
-          <img src={rutaLogo} alt="Logo Credit" />
+          <img src="/src/assets/svg/Logo_Lomotor_v2_logo_black.svg" alt="Logo Credit" />
         </div>
       </div>
     </>

@@ -1,0 +1,17 @@
+.title{
+  text-align: start;
+  p{
+    font-size: 22px;
+    font-weight: 600px;
+  }
+}
+.vehicle-container{
+  margin-bottom: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  div{
+    width: 20%;
+    max-width: 300px;
+    color: black;
+  }
+}

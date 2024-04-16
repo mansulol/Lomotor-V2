@@ -25,7 +25,7 @@ function Home() {
 
       <DiscoverBentoGrids/>
 
-      <Footer rutaLogo={"/src/assets/svg/Logo_Lomotor_v2_logo_black.svg"} />
+      <Footer />
     </>
   );
 }
