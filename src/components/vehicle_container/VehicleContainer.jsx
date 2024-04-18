@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import vehicles from '../../services/images/vehicleCars'
 import Card from '../card/Card'
 import './VehicleContainer.css'
@@ -6,6 +6,12 @@ import './VehicleContainer.css'
 export default function VehicleContainer({title}) {
 
   const [vehicleList, setVehicleList] = useState(0)
+
+  useEffect(() => {
+    const count = vehicles.filter(vehicle => vehicle.type === title).length;
+    
+    setVehicleList(count);
+  }, [title]);
 
   return (
     <>
@@ -24,7 +30,7 @@ export default function VehicleContainer({title}) {
               icon={false}
             />
           ) 
-          : "";
+          : null;
         })
         }
       </div>

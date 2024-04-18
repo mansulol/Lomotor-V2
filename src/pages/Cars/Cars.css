@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 :root {
   --primaryColor: #a48451;
@@ -18,51 +18,49 @@
 * {
   margin: 0;
   padding: 0;
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
-body{
+body {
   box-sizing: border-box;
 }
-.img-background-container{
+.img-background-container {
   width: 100dvw;
-  img{
+  img {
     width: 100%;
     object-fit: cover;
   }
 }
-.cars-container{
+.cars-container {
   min-width: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 4em;
-  div{
+  div {
     width: 50dvw;
   }
-  .cars-title{
+  .cars-title {
     text-align: start;
-    h1{
+    h1 {
       font-size: 3em;
       color: var(--primaryColor);
       font-weight: 700;
     }
   }
-  .cars-filters{
+  .cars-filters {
     display: flex;
     align-items: baseline;
     gap: 1em;
     margin-top: 2em;
     font-size: 1.5em;
     color: var(--secondaryFontColor);
-    .filters{
+    .filters {
       position: relative;
       font-weight: 700;
     }
-    .filters::before{
+    .filters::before {
       content: "";
       position: absolute;
       bottom: -5px;
@@ -72,14 +70,16 @@ body{
       height: 2.5px;
       transform: scaleX(0);
       /* transform-origin: left; */
-      transition: .3s;
-
+      transition: 0.3s;
     }
-    .filters:hover:before{
+    .filters:hover{
+      color: var(--defaultDark);
+    }
+    .filters:hover:before {
       transform: scaleX(1);
     }
   }
-  .cars-content{
+  .cars-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -12,7 +12,8 @@ function Home() {
     <>
       <Header
         page="home"
-        rutaLogo={"/src/assets/svg/Logo_Lomotor_v2_letras_white.svg"}
+        LogoHeader={"/src/assets/svg/Logo_Lomotor_v2_letras_white.svg"}
+        LogoNavBar={"/src/assets/svg/Logo_Lomotor_v2_letras_black.svg"}
       />
 
       <div className="container-video">
