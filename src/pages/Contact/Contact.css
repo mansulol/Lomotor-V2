@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+
+:root {
+  --primaryColor: #a48451;
+  --secondaryColor: #7d7d7e;
+  --thirdColor: #1d2222;
+
+  --primaryBackgroundColor: #2b2b2a;
+  --secondaryBackgroundColor: #404040;
+
+  --primaryFontColor: #f1f5f9;
+  --secondaryFontColor: #94a3b8;
+
+  --defaultWhite: #fff;
+  --defaultDark: #0d0d0d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.contact-us-container {
+  background-color: var(--secondaryBackgroundColor);
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+
+  .img-container {
+    width: 60%;
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .contact-form-container {
+    width: 30%;
+    min-width: 400px;
+    height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+      width: 100%;
+    }
+    .contact-form {
+      height: 70%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label {
+          color: var(--primaryColor);
+          font-weight: bold;
+          font-size: 24px;
+        }
+        label:hover {
+          color: var(--primaryFontColor);
+        }
+
+        input,
+        select,
+        textarea {
+          width: 50%;
+          min-width: 100px;
+          min-height: 20px;
+          background-color: transparent;
+          color: var(--secondaryColor);
+          border: 2px solid var(--primaryColor);
+          padding-left: 3px;
+          font-size: 16px;
+        }
+      }
+    }
+    .btn {
+      button {
+        padding: 0.6em 2em;
+        border-radius: 10px;
+        background-color: var(--primaryColor);
+        border: 0;
+        color: var(--primaryFontColor);
+        font-size: 18px;
+        cursor: pointer;
+      }
+      button:hover {
+        border: var(--primaryColor) 2px solid;
+        background-color: transparent;
+        color: var(--primaryColor);
+      }
+      button:active {
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+.footer_mobile{
+  display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+      display: none;
+    }
+  }
+  .footer_mobile{
+    display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+      width: 100vw;
+    }
+
+    .contact-form-container {
+      position: absolute;
+      width: 70%;
+      z-index: 10;
+      background-color: var(--secondaryBackgroundColor);
+      border-radius: 10px;
+      .contact-form {
+        div {
+          input,
+          select,
+          textarea {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contact-us-container {
+
+    .img-container {
+      width: 60%;
+    }
+    .contact-form-container {
+      position: relative;
+      width: calc(40% - 1rem);
+      z-index: 0;
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

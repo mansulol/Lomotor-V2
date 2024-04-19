@@ -4,9 +4,9 @@ import videos from "../../services/video/brabus-cars/BrabusCars";
 import Footer from "../../components/footer/Footer";
 import ExploreAllCars from "../../components/explore_all_cars/ExploreAllCars";
 import DiscoverBentoGrids from "../../components/discover-bento-grids/DiscoverBentoGrids";
+import Carrusel from '../../components/carrusel/Carrusel';
 
 function Home() {
-  const urlVideo = videos[0].src;
 
   return (
     <>
@@ -18,7 +18,7 @@ function Home() {
 
       <div className="container-video">
       {/* playsInline preload="none" muted loop autoPlay */}
-        <video  className="video" src={urlVideo}></video>
+       <Carrusel  posVideo={0}/>
       </div>
 
       {/* Porque el boton sube cuando tiene que estar quieto con un position absolute */}

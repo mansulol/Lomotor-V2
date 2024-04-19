@@ -39,7 +39,9 @@ export default function Header({
           />
         </div>
         <div className="logo-header-container">
-          <img src={LogoHeader} alt="Logo Header Words" />
+          <a href="/Home">
+            <img src={LogoHeader} alt="Logo Header Words" />
+          </a>
         </div>
         <div className="icons-header-container shown">
           <FontAwesomeIcon className="icon-header" icon={faGlobe} />
@@ -58,7 +60,10 @@ export default function Header({
         </div>
         <div className="menu-links-container">
           <div className="menu-link home">
-            <p> <a href="/Home">Home</a> </p>
+            <p>
+              {" "}
+              <a href="/Home">Home</a>{" "}
+            </p>
             <FontAwesomeIcon
               className={cross ? "icon-navbar" : "icon-navbar plus"}
               icon={faPlus}
@@ -69,7 +74,10 @@ export default function Header({
             />
           </div>
           <div className="menu-link brand">
-            <p> <a href="/Brand">Brand</a> </p>
+            <p>
+              {" "}
+              <a href="/Brand">Brand</a>{" "}
+            </p>
             <FontAwesomeIcon className="icon-navbar plus" icon={faPlus} />
             <FontAwesomeIcon
               className="icon-navbar chevronRight"
@@ -77,7 +85,10 @@ export default function Header({
             />
           </div>
           <div className="menu-link cars">
-            <p> <a href="/Cars"> Cars </a> </p>
+            <p>
+              {" "}
+              <a href="/Cars"> Cars </a>{" "}
+            </p>
             <FontAwesomeIcon className="icon-navbar plus" icon={faPlus} />
             <FontAwesomeIcon
               className="icon-navbar chevronRight"
@@ -87,7 +98,10 @@ export default function Header({
         </div>
         <div className="menu-contact-container">
           <div className="menu-contact">
-            <p> <a href="/Contact"> Contact Us </a> </p>
+            <p>
+              {" "}
+              <a href="/Contact"> Contact Us </a>{" "}
+            </p>
           </div>
         </div>
       </nav>

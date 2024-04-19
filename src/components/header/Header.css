@@ -17,7 +17,6 @@
   margin: 0;
   padding: 0;
 }
-
 .header {
   background-color: transparent;
   width: 100vw;
@@ -30,6 +29,9 @@
 
   .menu-container {
     width: auto;
+  }
+  .menu-container:active{
+    transform: scale(.8);
   }
   div {
     display: flex;
@@ -56,6 +58,12 @@
   font-size: 2em;
   color: white;
 }
+.icon-header:hover{
+  color: var(--primaryColor);
+}
+.icon-header:active{
+  transform: scale(.8);
+}
 
 .menu-navbar {
   background-color: var(--primaryFontColor);
@@ -80,6 +88,9 @@
     .icon-menu {
       font-size: 1.8em;
       width: 50px;
+    }
+    .icon-menu:active{
+      transform: scale(.8);
     }
     img {
       width: 80%;
@@ -106,6 +117,9 @@
           text-decoration: none;
           color: var(--defaultDark);
         }
+      }
+      .icon-navbar:active{
+        transform: rotate(90deg);
       }
     }
   }

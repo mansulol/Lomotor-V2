@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
 
 :root {
   --primaryColor: #a48451;
@@ -19,12 +18,9 @@
 * {
   margin: 0;
   padding: 0;
-  .pt-serif-bold {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .line-footer {
   border: 2px solid #ffffff;
@@ -101,6 +97,7 @@
       width: 90%;
       height: 20%;
       margin-top: 2em;
+      margin-bottom: 2em;
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -121,20 +118,20 @@
         height: 40px;
 
         .btn {
-          width: 30%;
-          max-width: 300px;
+          width: 40%;
+          max-width: 400px;
           height: 60px;
           position: relative;
           border: 2px solid var(--primaryColor);
-          color:  var(--primaryColor);
-          background: transparent;
+          color: var(--primaryFontColor);
+          background-color: var(--primaryColor);
           font-size: 20px;
           cursor: pointer;
           border-radius: 30px;
-          transition: .3s;
+          transition: 0.3s;
           overflow: hidden;
         }
-        .btn::before{
+        .btn::before {
           content: "";
           position: absolute;
           top: 0;
@@ -143,6 +140,14 @@
           height: 100%;
           background-color: var(--primaryColor);
           z-index: -1;
+        }
+        .btn:hover{
+          background-color: transparent;
+          color: var(--primaryColor);
+        }
+        .btn:active{
+          transform: scale(.8);
+          color: var(--primaryFontColor);
         }
       }
       .input,
@@ -181,6 +186,7 @@
       .policies {
         display: flex;
         align-items: center;
+        cursor: pointer;
       }
       .policies {
         gap: 4px;
@@ -200,7 +206,13 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .license-container {
-    flex-direction: column;
+    flex-direction: column; 
+    .license{
+      .policies-container{
+        flex-direction: column;
+        min-height: 50px;
+      }
+    }
     gap: 5px;
     .logo {
       width: 90%;
