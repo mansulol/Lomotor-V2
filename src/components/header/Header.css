@@ -57,6 +57,7 @@
   width: 50px;
   font-size: 2em;
   color: white;
+  cursor: pointer;
 }
 .icon-header:hover{
   color: var(--primaryColor);

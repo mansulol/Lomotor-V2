@@ -8,7 +8,7 @@ function Carrusel({posVideo = 4}){
   return(
     <div className="carrusel">
       {/* playsInline preload="none" muted loop autoPlay */}
-      <video className="video" src={urlVideo}></video>
+      <video playsInline preload="none" muted loop autoPlay className="video" src={urlVideo}></video>
     </div>
   )
 }

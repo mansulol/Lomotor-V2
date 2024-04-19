@@ -38,3 +38,37 @@
     }
   }
 }
+.brand-container{
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  div{
+    width: 30%;
+    max-width: 500px;
+    min-width: 200px;
+    img{
+      width: 100%;
+    }
+  }
+  .brand-black-container, .brand-white-container{
+    margin-bottom: 10%;
+  }
+  .brand-brabus-container{
+    margin-bottom: -10%;
+    width: calc(40% - 200px);
+    min-width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 700;
+    p span{
+      color: var(--primaryColor);
+    }
+  }
+}

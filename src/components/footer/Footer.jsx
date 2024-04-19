@@ -38,7 +38,7 @@ export default function Footer({
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe> */}
-          <img src="/public/images/map.png" alt="Lomotor ubication" />
+          <img src="/images/map.png" alt="Lomotor ubication" />
           <p>123 Main Street, San Francisco, CA, 94105</p>
         </div>
         <div className="suscribe-container">

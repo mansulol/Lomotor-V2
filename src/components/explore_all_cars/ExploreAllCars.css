@@ -77,6 +77,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      a{
+        text-decoration: none;
+        color: var(--primaryFontColor);
+      }
+    }
+    .btn-explore:active{
+      transform: scale(.8);
+      transition: .3s;
+    }
+    .btn-explore:hover{
+      background-color: var(--primaryColor);
+      border: 4px solid var(--primaryFontColor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: var(--primaryFontColor);
     }
   }
