@@ -24,7 +24,9 @@ export default function Footer({
             <FontAwesomeIcon className="social-media-icon" icon={faFacebook} />
             <FontAwesomeIcon className="social-media-icon" icon={faInstagram} />
             <FontAwesomeIcon className="social-media-icon" icon={faXTwitter} />
+            <a href="https://github.com/MansourLoLo/LOMOTOR_v2">
             <FontAwesomeIcon className="social-media-icon" icon={faGithub} />
+            </a>
           </div>
         </div>
         <div className="find-us-container">
